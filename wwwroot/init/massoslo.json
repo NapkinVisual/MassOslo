@@ -1,0 +1,50 @@
+{
+  "homeCamera": {
+    "north": 70,
+    "east": 25,
+    "south": 50,
+    "west": 5
+  },
+  "services": [],
+  "corsDomains": [],
+  "catalog": [
+    {
+      "type": "group",
+      "name": "Norges Geologiske Undersøkelse (NGU)",
+      //"preserveOrder": true,
+      "description": "Data hentet fra Norges Geologiske Undersøkelse, NGU.\n\nhttps://www.ngu.no/",
+      "members": [
+        {
+          "type": "wms-group",
+          "name": "BerggrunnN250",
+          "url": "http://geo.ngu.no/mapserver/BerggrunnWMS2"
+        },
+        /*{
+          "type": "wms-group",
+          "name": "BerggrunnN50",
+          "url": "http://geo.ngu.no/mapserver/BerggrunnN50WMS2"
+        },*/
+        {
+          "type": "wms-group",
+          "name": "Løsmasser",
+          "url": "http://geo.ngu.no/mapserver/LosmasserWMS"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "Kartverket",
+      //"preserveOrder": true,
+      "description": "Kartverket.\n\nhttps://kartverket.no/",
+      "members": [
+        {
+          "type": "wms-group",
+          "name": "Digital terrengmodell (DTM)",
+          "url": "https://wms.geonorge.no/skwms1/wms.hoyde-dtm"
+        }
+      ]
+    }
+  ],
+  "baseMapId": "basemap-bing-aerial-with-labels",
+  "previewBaseMapId": "basemap-positron"
+}

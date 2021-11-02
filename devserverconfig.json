@@ -2,6 +2,8 @@
     "port": 3001,
 
     "allowProxyFor" : [
+        "geo.ngu.no",
+        "wms.geonorge.no",
         "nicta.com.au",
         "gov.au",
         "csiro.au",
