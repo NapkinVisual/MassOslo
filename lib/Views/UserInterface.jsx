@@ -1,12 +1,12 @@
 import {
-  MenuLeft,
+  //MenuLeft,
   Nav,
   ExperimentalMenu
 } from "terriajs/lib/ReactViews/StandardUserInterface/customizable/Groups";
-import MenuItem from "terriajs/lib/ReactViews/StandardUserInterface/customizable/MenuItem";
+//import MenuItem from "terriajs/lib/ReactViews/StandardUserInterface/customizable/MenuItem";
 import PropTypes from "prop-types";
 import React from "react";
-import RelatedMaps from "./RelatedMaps";
+//import RelatedMaps from "./RelatedMaps";
 import SplitPoint from "terriajs/lib/ReactViews/SplitPoint";
 import StandardUserInterface from "terriajs/lib/ReactViews/StandardUserInterface/StandardUserInterface.jsx";
 import version from "../../version";
@@ -31,10 +31,6 @@ import "./global.scss";
 export default function UserInterface(props) {
   return (
     <StandardUserInterface {...props} version={version}>
-      <MenuLeft>
-        <MenuItem caption="About" href="about.html" key="about-link" />
-        <RelatedMaps viewState={props.viewState} />
-      </MenuLeft>
       <ExperimentalMenu>
         {/* <If condition={isBrowserSupportedAV()}>
           <SplitPoint

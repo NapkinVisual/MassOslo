@@ -5,20 +5,18 @@
       "packages/terriajs",
       "packages/cesium"
     ],
-    "nohoist": [
-      "**/husky"
-    ]
+    "nohoist": []
   },
-  "name": "terriajs-map",
+  "name": "MassOslo",
   "version": "0.0.1",
-  "description": "Geospatial catalog explorer based on TerriaJS.",
+  "description": "MassOslo data-portal.",
   "license": "Apache-2.0",
   "engines": {
     "node": ">= 8.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/TerriaJS/TerriaMap"
+    "url": "http://github.com/NapkinVisual/MassOslo"
   },
   "dependencies": {
     "pm2": "^3.2.2",
@@ -56,7 +54,6 @@
     "fs-extra": "^7.0.1",
     "generate-terriajs-schema": "^1.5.0",
     "gulp": "^4.0.0",
-    "husky": "^2.7.0",
     "json5": "^2.1.0",
     "node-notifier": "^5.1.2",
     "node-sass": "^4.14.1",
@@ -104,11 +101,6 @@
     "prettier": "prettier --write \"**/*\"",
     "pretty-quick": "pretty-quick",
     "prettier-check": "prettier --check \"**/*\""
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
   },
   "pancake": {
     "auto-save": true,
