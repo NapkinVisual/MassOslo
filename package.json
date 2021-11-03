@@ -86,6 +86,7 @@
   "scripts": {
     "docker-build-local": "node ./deploy/docker/create-docker-context-for-node-components.js --build --push --tag auto --local",
     "docker-build-prod": "node ./deploy/docker/create-docker-context-for-node-components.js --build --push --tag auto",
+    "docker-build-prod-tar": "node ./deploy/docker/create-docker-context-for-node-components.js --output massoslo.tar",
     "docker-build-ci": "node ./deploy/docker/create-docker-context-for-node-components.js --build",
     "start": "pm2 start ecosystem.config.js --update-env -- --config-file devserverconfig.json",
     "stop": "pm2 stop ecosystem.config.js",

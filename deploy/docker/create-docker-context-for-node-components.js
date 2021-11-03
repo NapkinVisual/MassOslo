@@ -14,7 +14,7 @@ const argv = yargs
         },
         tag: {
             description:
-                'The tag to pass to "docker build".  This parameter is only used if --build is specified.  If the value of this parameter is `auto`, a tag name is automatically created from NPM configuration.',
+                'The tag to pass to "docker build". This parameter is only used if --build is specified.  If the value of this parameter is `auto`, a tag name is automatically created from NPM configuration.',
             type: "string"
         },
         output: {
