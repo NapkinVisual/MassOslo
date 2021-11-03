@@ -72,14 +72,15 @@ body {
 
   // Buttons like "Share" within the map area.
   .tjs-_buttons__btn--map {
-    background: $light;
+    background: $light !important;
+    color: $color-primary !important;
     &:focus, &:hover { color: white; }
   }
 
   // Lat/lon buttons
   .tjs-legend__locationBar, .tjs-legend__distanceLegend {
-    background: $light;
-    color: white;
+    background: $light-darker;
+    color: $color-primary;
     &:hover, &:focus { background: $light; color: white; }
   }
 

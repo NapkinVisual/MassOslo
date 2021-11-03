@@ -19,7 +19,12 @@
   <title>MassOslo</title>
 
   <style type="text/css">
-    div[class*=" SidePanel__BoxHelpfulHints"] { display: none; }
+    div[class*=" SidePanel__BoxHelpfulHints"],
+    div.tjs-notification-window__notification img[src="./build/TerriaJS/images/feature.gif"] { display: none; }
+    /*div[class*="StoryBuilder__Panel-sc"] button[class^="Button__StyledButton-sc-"]:first-child { display: none; }*/
+
+    div[class^="SidePanel___StyledDiv-sc-"] { padding: 5px; background-color: #bfbfbf; }
+    div[class^="Branding___StyledDiv-sc-"] { background-color: white; }
   </style>
 
   <!-- Leaflet -->

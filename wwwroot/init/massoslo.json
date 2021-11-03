@@ -11,7 +11,6 @@
     {
       "type": "group",
       "name": "Norges Geologiske Undersøkelse (NGU)",
-      //"preserveOrder": true,
       "description": "Data hentet fra Norges Geologiske Undersøkelse, NGU.\n\nhttps://www.ngu.no/",
       "members": [
         {
@@ -27,15 +26,22 @@
         {
           "type": "wms-group",
           "name": "Løsmasser",
-          "url": "http://geo.ngu.no/mapserver/LosmasserWMS"
+          "url": "http://geo.ngu.no/mapserver/LosmasserWMS"/*,
+          "itemProperties": {
+            "getFeatureInfoFormats": [
+              {
+                "type": "html",
+                "format": "text/html"
+              }
+            ]
+          }*/
         }
       ]
     },
     {
       "type": "group",
       "name": "Kartverket",
-      //"preserveOrder": true,
-      "description": "Kartverket.\n\nhttps://kartverket.no/",
+      "description": "Data hentet fra Kartverket.\n\nhttps://kartverket.no/",
       "members": [
         {
           "type": "wms-group",
@@ -46,5 +52,6 @@
     }
   ],
   "baseMapId": "basemap-bing-aerial-with-labels",
-  "previewBaseMapId": "basemap-positron"
+  "previewBaseMapId": "basemap-positron",
+  "viewerMode": "2d"
 }

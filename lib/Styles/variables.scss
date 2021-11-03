@@ -16,14 +16,14 @@ $color-primary: hsl(152, 38%, 26%);
 $color-secondary: hsl(149, 45%, 48%); // or: lighten($color-primary, 20%);
 
 // These variables set background panel colors
-$light: lightgrey;
-$light-with-overlay: lightgrey;
-$light-lighter: hsl(0, 0%, 95%);
+$light: hsl(0, 0%, 95%);
+$light-with-overlay: hsl(0, 0%, 95%);
+$light-lighter: hsl(0, 0%, 99%);
 
 // You might find it helpful to define these and use them.
 $color-primary-light: lighten($color-primary, 10%);
 $color-primary-dark: darken($color-primary, 10%);
-$light-darker: grey;
+$light-darker: lightgrey;
 
 
 $focus-border-light-color: $text-light;
