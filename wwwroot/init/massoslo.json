@@ -47,6 +47,11 @@
           "type": "wms-group",
           "name": "Digital terrengmodell (DTM)",
           "url": "https://wms.geonorge.no/skwms1/wms.hoyde-dtm"
+        },
+        {
+          "type": "wms-group",
+          "name": "Matrikkelen – Enkel",
+          "url": "https://openwms.statkart.no/skwms1/wms.matrikkel"
         }
       ]
     }
