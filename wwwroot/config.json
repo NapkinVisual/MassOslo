@@ -60,7 +60,7 @@
     // Options are: "3DTerrain", "3DSmooth", "2D"
     "mobileDefaultViewerMode": "2d",
 
-    "experimentalFeatures": true,
+    "experimentalFeatures": false,
 
     "showWelcomeMessage": false,
     // To override the welcome message video displayed on the welcome message

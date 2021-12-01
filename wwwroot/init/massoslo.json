@@ -1,12 +1,12 @@
 {
   "homeCamera": {
-    "north": 70,
-    "east": 25,
-    "south": 50,
-    "west": 5
+    "north": 59.92921601115445,
+    "east": 10.810375213623049,
+    "south": 59.90340168857946,
+    "west": 10.662403106689455
   },
   "services": [],
-  "corsDomains": [],
+  "corsDomains": [ "geo.ngu.no", "wms.geonorge.no", "openwms.statkart.no" ],
   "catalog": [
     {
       "type": "group",
@@ -14,9 +14,15 @@
       "description": "Data hentet fra Norges Geologiske Undersøkelse, NGU.\n\nhttps://www.ngu.no/",
       "members": [
         {
-          "type": "wms-group",
+          "type": "wms",
           "name": "BerggrunnN250",
-          "url": "http://geo.ngu.no/mapserver/BerggrunnWMS2"
+          "url": "http://geo.ngu.no/mapserver/BerggrunnWMS2",
+          "layers": "Bergart_flate",
+          "legends": [
+            {
+              "url": "http://geo.ngu.no/mapserver/BerggrunnWMS2?service=WMS&version=1.1.1&request=GetLegendGraphic&format=image%2Fpng&layer=Bergart_flate"
+            }
+          ]
         },
         /*{
           "type": "wms-group",
@@ -24,17 +30,15 @@
           "url": "http://geo.ngu.no/mapserver/BerggrunnN50WMS2"
         },*/
         {
-          "type": "wms-group",
+          "type": "wms",
           "name": "Løsmasser",
-          "url": "http://geo.ngu.no/mapserver/LosmasserWMS"/*,
-          "itemProperties": {
-            "getFeatureInfoFormats": [
-              {
-                "type": "html",
-                "format": "text/html"
-              }
-            ]
-          }*/
+          "url": "http://geo.ngu.no/mapserver/LosmasserWMS",
+          "layers": "Losmasse_flate",
+          "legends": [
+            {
+              "url": "http://geo.ngu.no/mapserver/LosmasserWMS?service=WMS&version=1.1.1&request=GetLegendGraphic&format=image%2Fpng&layer=Losmasse_flate"
+            }
+          ]
         }
       ]
     },
@@ -42,6 +46,7 @@
       "type": "group",
       "name": "Kartverket",
       "description": "Data hentet fra Kartverket.\n\nhttps://kartverket.no/",
+      "isOpen": true,
       "members": [
         {
           "type": "wms-group",
@@ -49,9 +54,17 @@
           "url": "https://wms.geonorge.no/skwms1/wms.hoyde-dtm"
         },
         {
-          "type": "wms-group",
+          /*"type": "wms-group",
           "name": "Matrikkelen – Enkel",
-          "url": "https://openwms.statkart.no/skwms1/wms.matrikkel"
+          "url": "http://openwms.statkart.no/skwms1/wms.matrikkel"*/
+          "type": "kml",
+          "name": "Matrikkelen – Enkel",
+          "url": "data/matrikkelen-oslo.kml",
+          "legends": [
+            {
+              "url": "http://openwms.statkart.no/skwms1/wms.matrikkel?language=eng&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=eiendomsgrense&format=image/png&STYLE=default"
+            }
+          ]
         }
       ]
     }

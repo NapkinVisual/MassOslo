@@ -4,6 +4,8 @@
     "allowProxyFor" : [
         "geo.ngu.no",
         "wms.geonorge.no",
+        "openwms.statkart.no",
+
         "nicta.com.au",
         "gov.au",
         "csiro.au",
