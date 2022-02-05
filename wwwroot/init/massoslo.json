@@ -17,7 +17,13 @@
         {
           "url": "http://geo.ngu.no/mapserver/BerggrunnWMS2?service=WMS&version=1.1.1&request=GetLegendGraphic&format=image%2Fpng&layer=Bergart_flate"
         }
-      ]
+      ],
+      "rectangle": {
+        "north": 59.925462317,
+        "east": 10.839091940,
+        "south": 59.907152416,
+        "west": 10.805264451
+      }
     },
     /*{
       "type": "wms-group",
@@ -39,13 +45,25 @@
       "type": "wms",
       "name": "Digital terrengmodell (DTM)",
       "url": "https://wms.geonorge.no/skwms1/wms.hoyde-dtm",
-      "layers": "DTM:helning_grader"
+      "layers": "DTM:helning_grader",
+      "rectangle": {
+        "north": 59.925462317,
+        "east": 10.839091940,
+        "south": 59.907152416,
+        "west": 10.805264451
+      }
     },
     {
       "type": "wms",
       "name": "Forurensede områder",
       "url": "https://kart.miljodirektoratet.no/arcgis/services/grunnforurensning2/MapServer/WMSServer",
-      "layers": "forurenset_omrade"
+      "layers": "forurenset_omrade",
+      "rectangle": {
+        "north": 59.925462317,
+        "east": 10.839091940,
+        "south": 59.907152416,
+        "west": 10.805264451
+      }
     },
     {
       /*"type": "wms-group",
