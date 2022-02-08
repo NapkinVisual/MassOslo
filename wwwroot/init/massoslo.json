@@ -99,7 +99,29 @@
     }
   ],
   "workbench": [ "//Matrikkelen", "//Forurensede områder", "//Digital terrengmodell (DTM)" ],
-  "baseMapId": "basemap-bing-aerial-with-labels",
-  "previewBaseMapId": "basemap-positron",
-  "viewerMode": "2d"
+  "viewerMode": "2d",
+  //"baseMapId": "basemap-bing-aerial-with-labels",
+  //"previewBaseMapId": "basemap-positron",
+  "baseMaps": {
+    "items": [
+      {
+        "item": {
+          "id": "basemap-bing-hovinbyen",
+          "type": "bing-maps",
+          "name": "Bing Maps – Hovinbyen",
+          "mapStyle": "AerialWithLabels",
+          "opacity": 1.0,
+          "rectangle": {
+            "north": 59.925462317,
+            "east": 10.839091940,
+            "south": 59.907152416,
+            "west": 10.805264451
+          }
+        },
+        "image": "build/TerriaJS/images/bing-aerial-labels.png"
+      }
+    ],
+    "defaultBaseMapId": "basemap-bing-hovinbyen",
+    "previewBaseMapId": "basemap-bing-hovinbyen"
+  }
 }
